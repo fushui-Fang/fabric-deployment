@@ -24,7 +24,7 @@
 
  	```bash
     cd setupCluster
-    ./generateALL.sh false "ca:d-2zec1lmnswzmw6wvbf78*d-2ze4nj01p2wx5ulx1i9o*d-2zefd0bxu6p1t1t2t5jy;zk_log:d-2zejf9nquzodx13e0jv6,d-2ze0ama2kdy8scer4aqu,d-2ze8pw637jbjqtnxfosb;zk_data:d-2ze23heo6330snx8u1bv,d-2zehc2sfrb4getxtod2c,d-2ze4nj01p2wx5ulx1i9p;kafka:d-2ze9bd0xk7gqy4n8yvny,d-2ze81l1uitdsttatx1mc,d-2ze9tuynklrlyzcfi8e4,d-2zebgsn1haj8kg86bhst;peer:d-2ze9tuynklrlyzcfi8e3,d-2ze9419cu2b826fgoomb*d-2zebgsn1haj8kg86bhss,d-2ze0ama2kdy8scer4aqv*d-2zec1lmnswzmw6wvbf77,d-2ze81l1uitdsttatx1mb;orderer:d-2ze31n0q38u3agtoucaw,d-2zeaxkjjc2mao19wa4pe,d-2ze0bf6ochegloh2cw0s" nfsserveraddress
+    ./generateALL.sh false "ca:d-ca1*d-ca2;zk_log:d-zklog1,d-zklog2,d-zklog3;zk_data:d-zkdata1,d-zkdata2,d-zkdata3;kafka:d-k1,d-k2,d-k3,d-k4;peer:d-p0,d-p1*d-p2,d-p3;orderer:d-o1,d-o2,d-o3" nfsAddress
     ```
 
 ### Start fabric network
