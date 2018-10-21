@@ -93,7 +93,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
         - name: $name
-          image:  hyperledger/fabric-tools:x86_64-1.1.0-preview
+          image:  hyperledger/fabric-tools:x86_64-1.0.6
           env:
           
           - name: CORE_PEER_TLS_ENABLED
