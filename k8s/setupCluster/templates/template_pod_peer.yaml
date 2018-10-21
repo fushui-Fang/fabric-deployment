@@ -7,11 +7,14 @@ spec:
     storage: 20Gi
   accessModes:
     - ReadWriteMany
-  flexVolume:
-    driver: "alicloud/disk"
-    fsType: "ext4"
-    options:
-      volumeId: "$volumeId"
+#  flexVolume:
+#    driver: "alicloud/disk"
+#    fsType: "ext4"
+#    options:
+#      volumeId: "$volumeId"
+  nfs:
+    path: /opt/share/$volumeId
+    server: 172.18.158.121 #change to your nfs server ip here
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -66,7 +69,7 @@ spec:
 #
 
       - name: $podName 
-        image: hyperledger/fabric-peer:x86_64-1.1.0-preview
+        image: hyperledger/fabric-peer:x86_64-1.0.6
         env:
 #        - name: CORE_LEDGER_STATE_STATEDATABASE
 #          value: "CouchDB"
